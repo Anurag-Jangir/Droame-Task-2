@@ -1,0 +1,15 @@
+<%- include('includes/head.ejs') %>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5 mb-4">Add Shot Type</h1>
+      <form class="mt-4 mb-5" action="/add-shot-type" method="POST">
+        <div class="form-group">
+          <label for="shotType">Shot Type</label>
+          <input type="text" class="form-control" id="shotType" name="shotType" placeholder="Enter shot type">
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Add</button>
+      </form>
+    </div>
+
+    <%- include('includes/end.ejs') %>
